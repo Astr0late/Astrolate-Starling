@@ -1,0 +1,16 @@
+../Core/Src/main.c:253:6:HID_LedsInit	4	static
+../Core/Src/main.c:262:9:READ_FLASH	16	static
+../Core/Src/main.c:269:6:WRITE_FLASH	96	static
+../Core/Src/main.c:324:6:ADC_SELECTOR	32	static
+../Core/Src/main.c:338:10:ADC_GET_VALUE	8	static
+../Core/Src/main.c:348:6:SELECT_MUX_CH	16	static
+../Core/Src/main.c:363:6:KEY_PRESS	24	static
+../Core/Src/main.c:422:5:main	40	static
+../Core/Src/main.c:910:6:SystemClock_Config	88	static
+../Core/Src/main.c:956:13:MX_ADC1_Init	24	static
+../Core/Src/main.c:1008:13:MX_I2C1_Init	8	static
+../Core/Src/main.c:1042:13:MX_TIM1_Init	96	static
+../Core/Src/main.c:1117:13:MX_TIM3_Init	56	static
+../Core/Src/main.c:1164:13:MX_DMA_Init	16	static
+../Core/Src/main.c:1189:13:MX_GPIO_Init	40	static
+../Core/Src/main.c:1228:6:Error_Handler	4	static,ignoring_inline_asm

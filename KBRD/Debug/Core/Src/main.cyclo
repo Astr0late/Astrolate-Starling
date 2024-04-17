@@ -1,0 +1,16 @@
+../Core/Src/main.c:253:6:HID_LedsInit	1
+../Core/Src/main.c:262:9:READ_FLASH	1
+../Core/Src/main.c:269:6:WRITE_FLASH	6
+../Core/Src/main.c:324:6:ADC_SELECTOR	2
+../Core/Src/main.c:338:10:ADC_GET_VALUE	1
+../Core/Src/main.c:348:6:SELECT_MUX_CH	1
+../Core/Src/main.c:363:6:KEY_PRESS	5
+../Core/Src/main.c:422:5:main	119
+../Core/Src/main.c:910:6:SystemClock_Config	3
+../Core/Src/main.c:956:13:MX_ADC1_Init	2
+../Core/Src/main.c:1008:13:MX_I2C1_Init	2
+../Core/Src/main.c:1042:13:MX_TIM1_Init	7
+../Core/Src/main.c:1117:13:MX_TIM3_Init	3
+../Core/Src/main.c:1164:13:MX_DMA_Init	1
+../Core/Src/main.c:1189:13:MX_GPIO_Init	1
+../Core/Src/main.c:1228:6:Error_Handler	1
