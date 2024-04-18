@@ -5,6 +5,7 @@ Disclaimer: Do Not try to repeat it, it will be cost you more than ready one, yo
 ![photo_1_2024-04-17_22-33-16](https://github.com/Astr0late/Astrolate-Starling/assets/92204862/55485710-be8a-4c21-8687-7e106b0f98b6)
 
 ##Useful links
+
 [Summary components table:](https://docs.google.com/spreadsheets/d/1auTscNj8H9j_fcgZ-bffcughIZliOqQW7MaIze0y600/edit?usp=sharing)
 
 [Schematic and PCB desig:](https://oshwlab.com/online_admin/hall_keyboard)
