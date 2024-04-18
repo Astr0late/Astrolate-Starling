@@ -7,7 +7,7 @@ Disclaimer: Do Not try to repeat it, it will be cost you more than ready one, yo
 ## Useful links
 [Summary components table:](https://docs.google.com/spreadsheets/d/1auTscNj8H9j_fcgZ-bffcughIZliOqQW7MaIze0y600/edit?usp=sharing)
 
-[Schematic and PCB desig:](https://oshwlab.com/online_admin/hall_keyboard)
+[Schematic and PCB design:](https://oshwlab.com/online_admin/hall_keyboard)
 
 [USB Descriptor and Request Parser:](https://eleccelerator.com/usbdescreqparser)
 
@@ -29,7 +29,7 @@ One important moment, you must desolder S4 diode(if your version of Black pill h
 
 ![photo_2024-04-18_08-51-29](https://github.com/Astr0late/Astrolate-Starling/assets/92204862/2273e9d6-99e5-4888-9a79-494f306910da)
 
-There are many ways how to improve this design from different power lines for leds and sensors, to endless
+There are many ways how to improve this design from different power lines for leds and sensors, to endless...
 
 ## Assemblying
 ![photo_25_2024-04-17_22-33-16](https://github.com/Astr0late/Astrolate-Starling/assets/92204862/e05a078f-d728-4ad6-bee8-6d2a50be36a0)
