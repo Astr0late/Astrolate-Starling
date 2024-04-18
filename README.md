@@ -22,8 +22,7 @@ I developed pcb design that i can do myself
 
 ![photo_32_2024-04-17_22-33-16](https://github.com/Astr0late/Astrolate-Starling/assets/92204862/c35dbd1c-3ee9-4d92-870a-44778521ef20)
 
-![photo_32_2024-04-17_22-33-16](https://github.com/Astr0late/Astrolate-Starling/assets/92204862/e31157c6-cf58-456d-a8aa-64d747437b48)
-
+![photo_23_2024-04-17_22-33-16](https://github.com/Astr0late/Astrolate-Starling/assets/92204862/920af4eb-b748-4c22-9407-e7c1430d48fd)
 
 I will not talk about the process of making a PCB at home, since there is a lot of this information on the Internet, and besides, it is more profitable and easier to order it in China.
 In scheme, you see black pill, i didn`t bother with desoldering the same elements on the board.
