@@ -4,8 +4,7 @@
 Disclaimer: Do Not try to repeat it, it will be cost you more than ready one, you will lose more time than you expected. Therefore it has no sense. But for those who are interested:
 ![photo_1_2024-04-17_22-33-16](https://github.com/Astr0late/Astrolate-Starling/assets/92204862/55485710-be8a-4c21-8687-7e106b0f98b6)
 
-##Useful links
-
+## Useful links
 [Summary components table:](https://docs.google.com/spreadsheets/d/1auTscNj8H9j_fcgZ-bffcughIZliOqQW7MaIze0y600/edit?usp=sharing)
 
 [Schematic and PCB desig:](https://oshwlab.com/online_admin/hall_keyboard)
@@ -20,7 +19,7 @@ Than all started...
 ## PCB design
 I developed pcb design that i can do myself
 
-![photo_32_2024-04-17_22-33-16](https://github.com/Astr0late/Astrolate-Starling/assets/92204862/c35dbd1c-3ee9-4d92-870a-44778521ef20)
+![photo_2024-04-18_10-11-13](https://github.com/Astr0late/Astrolate-Starling/assets/92204862/58e3bbd2-e314-4cb8-a02a-4e589fb0e774)
 
 ![photo_23_2024-04-17_22-33-16](https://github.com/Astr0late/Astrolate-Starling/assets/92204862/920af4eb-b748-4c22-9407-e7c1430d48fd)
 
