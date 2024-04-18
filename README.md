@@ -4,7 +4,7 @@
 Disclaimer: Do Not try to repeat it, it will be cost you more than ready one, you will lose more time than you expected. Therefore it has no sense. But for those who are interested:
 ![photo_1_2024-04-17_22-33-16](https://github.com/Astr0late/Astrolate-Starling/assets/92204862/55485710-be8a-4c21-8687-7e106b0f98b6)
 
-##On start, useful links
+##Useful links
 [Summary components table:](https://docs.google.com/spreadsheets/d/1auTscNj8H9j_fcgZ-bffcughIZliOqQW7MaIze0y600/edit?usp=sharing)
 
 [Schematic and PCB desig:](https://oshwlab.com/online_admin/hall_keyboard)
@@ -16,7 +16,7 @@ It all started, when i realized that magnetic switches is killer-feature. When i
 And even more, i wanted 96 keys layout with knob, oled screen and function that i can control display brightness.
 Than all started... 
 
-##Firstly - PCB design
+## PCB design
 I developed pcb design that i can do myself
 
 ![photo_32_2024-04-17_22-33-16](https://github.com/Astr0late/Astrolate-Starling/assets/92204862/c35dbd1c-3ee9-4d92-870a-44778521ef20)
