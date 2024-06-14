@@ -290,9 +290,7 @@ void WRITE_FLASH(uint32_t address, uint8_t data) {
     for (uint32_t addr = 0x0807FFF0, i = 0; addr <= 0x0807FFFF; addr++, i++) {
     	if (addr == address){
             if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD, addr, data) != HAL_OK) {
-            	//HAL_FLASH_Lock();
                 Error_Handler();
-                //return;
             }
     	}
     	if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD, addr, OldData[i]) != HAL_OK) {
