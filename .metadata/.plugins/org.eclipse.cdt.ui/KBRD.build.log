@@ -1,0 +1,10 @@
+09:55:30 **** Incremental Build of configuration Debug for project KBRD ****
+make -j8 all 
+arm-none-eabi-size  KBRD.elf 
+   text	   data	    bss	    dec	    hex	filename
+  61768	    500	   6148	  68416	  10b40	KBRD.elf
+Finished building: default.size.stdout
+ 
+
+09:55:31 Build Finished. 0 errors, 0 warnings. (took 342ms)
+

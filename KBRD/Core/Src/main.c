@@ -280,21 +280,27 @@ void WRITE_FLASH(uint32_t address, uint8_t data) {
     eraseInitStruct.VoltageRange = FLASH_VOLTAGE_RANGE_3;
     eraseInitStruct.Sector = FLASH_SECTOR_7;
     eraseInitStruct.NbSectors = 1;
-    uint32_t sectorError = 0;
-    if (HAL_FLASHEx_Erase(&eraseInitStruct, &sectorError) != HAL_OK) {
+
+    if (HAL_FLASHEx_Erase(&eraseInitStruct, 0) != HAL_OK) {
+    	//HAL_FLASH_Lock();
         Error_Handler();
+        //return;
     }
 
     for (uint32_t addr = 0x0807FFF0, i = 0; addr <= 0x0807FFFF; addr++, i++) {
-        if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_BYTE, addr, OldData[i]) != HAL_OK) {		// Write old values in FLASH cells
-        	Error_Handler();
+    	if (addr == address){
+            if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD, addr, data) != HAL_OK) {
+            	//HAL_FLASH_Lock();
+                Error_Handler();
+                //return;
+            }
+    	}
+    	if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD, addr, OldData[i]) != HAL_OK) {
+        	//HAL_FLASH_Lock();
+            Error_Handler();
+            //return;
         }
 	}
-
-    if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_BYTE, address, data) != HAL_OK) {				// Write new value in FLASH cell
-    	Error_Handler();
-    }
-
     HAL_FLASH_Lock();
 
 /*
@@ -700,7 +706,6 @@ int main(void)
 						if(EncRotLft == 1)Red--;
 						if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8) == GPIO_PIN_RESET && RedMenu == 1){
 							while(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8) == GPIO_PIN_RESET);
-							//WRITE_FLASH(0x0807FFF0, 0xFF);
 							WRITE_FLASH(0x0807FFF0, Red);
 							RedMenu = 0;
 							SubMenuDeniedFlag = 0;
@@ -723,7 +728,6 @@ int main(void)
 						if(EncRotLft == 1)Green--;
 						if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8) == GPIO_PIN_RESET && GreenMenu == 1){
 						  while(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8) == GPIO_PIN_RESET);
-						  //WRITE_FLASH(0x0807FFF1, 0xFF);
 						  WRITE_FLASH(0x0807FFF1, Green);
 						  GreenMenu = 0;
 						  SubMenuDeniedFlag = 0;
@@ -746,7 +750,6 @@ int main(void)
 						if(EncRotLft == 1)Blue--;
 						if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8) == GPIO_PIN_RESET && BlueMenu == 1){
 						  while(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8) == GPIO_PIN_RESET);
-						  //WRITE_FLASH(0x0807FFF2, 0xFF);
 						  WRITE_FLASH(0x0807FFF2, Blue);
 						  BlueMenu = 0;
 						  SubMenuDeniedFlag = 0;
@@ -769,7 +772,6 @@ int main(void)
 						if(EncRotLft == 1)LedBrightness--;
 						if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8) == GPIO_PIN_RESET && BrMenu == 1){
 						  while(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8) == GPIO_PIN_RESET);
-						  //WRITE_FLASH(0x0807FFF3, 0xFF);
 						  WRITE_FLASH(0x0807FFF3, LedBrightness);
 						  BrMenu = 0;
 						  SubMenuDeniedFlag = 0;
@@ -781,7 +783,6 @@ int main(void)
 						SSD1306_Puts("BACK", &Font_7x10, SSD1306_COLOR_BLACK);
 						if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8) == GPIO_PIN_RESET && SubMenu == 1){
 							while(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8) == GPIO_PIN_RESET);
-							//WRITE_FLASH(0x0807FFF4, 0xFF);
 							ArgbMode = 1;
 							WRITE_FLASH(0x0807FFF4, ArgbMode);
 							SubMenu = !SubMenu;
@@ -797,7 +798,6 @@ int main(void)
 			if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8) == GPIO_PIN_RESET){
 				while(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8) == GPIO_PIN_RESET);
 				ArgbMode = 0;
-				//WRITE_FLASH(0x0807FFF4, 0xFF);
 				WRITE_FLASH(0x0807FFF4, ArgbMode);
 			}
 		  break;
@@ -807,7 +807,6 @@ int main(void)
 			if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8) == GPIO_PIN_RESET){
 				while(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8) == GPIO_PIN_RESET);
 				SwitchMode = 1;
-				//WRITE_FLASH(0x0807FFF5, 0xFF);
 				WRITE_FLASH(0x0807FFF5, SwitchMode);
 			}
 		  break;
@@ -817,7 +816,6 @@ int main(void)
 			if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8) == GPIO_PIN_RESET){
 				while(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8) == GPIO_PIN_RESET);
 				SwitchMode = 0;
-				//WRITE_FLASH(0x0807FFF5, 0xFF);
 				WRITE_FLASH(0x0807FFF5, SwitchMode);
 			}
 		  break;
