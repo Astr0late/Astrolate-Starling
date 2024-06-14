@@ -2425,10 +2425,8 @@ void WRITE_FLASH(uint32_t address, uint8_t data) {
  80015ce:	4603      	mov	r3, r0
  80015d0:	2b00      	cmp	r3, #0
  80015d2:	d001      	beq.n	80015d8 <WRITE_FLASH+0x9c>
-            	//HAL_FLASH_Lock();
                 Error_Handler();
  80015d4:	f001 faee 	bl	8002bb4 <Error_Handler>
-                //return;
             }
     	}
     	if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD, addr, OldData[i]) != HAL_OK) {
